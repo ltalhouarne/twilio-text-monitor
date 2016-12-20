@@ -35,7 +35,7 @@ public class TextmeApplication {
 		SpringApplication.run(TextmeApplication.class, args);
 	}
 
-	@Scheduled(fixedDelay = 10000)
+    @Scheduled(fixedDelay = 10000)
     public void textMeIfSomethingChanges() throws IOException, TwilioRestException {
         if(!setup){
             setup = true;
